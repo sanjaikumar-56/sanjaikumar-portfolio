@@ -1,0 +1,318 @@
+/* 🌙 Global Dark Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+/* 🧭 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #121212;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00bfff;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #00bfff;
+}
+
+/* 🏠 Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #00bfff;
+}
+
+.hero-content h1 span {
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #aaaaaa;
+}
+
+/* 🎯 Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #00bfff;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0099cc;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+.btn-outline:hover {
+    background: #00bfff;
+    color: #000;
+}
+
+/* 🌍 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #121212;
+    color: #888;
+    font-size: 14px;
+}
+
+/* 👨‍💻 About Section */
+.about-section {
+    padding: 60px 10%;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.about-image img {
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #00bfff;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.about-text span {
+    color: #00bfff;
+    font-weight: 600;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 25px 0;
+}
+
+.skills span {
+    background: #111;
+    border: 1px solid #00bfff;
+    color: #00bfff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #00bfff;
+    color: #000;
+}
+
+/* 💼 Projects Section */
+.projects-section {
+    padding: 60px 10%;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 36px;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #00bfff;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+}
+
+.project-card h2 {
+    color: #00bfff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* 📬 Contact Section */
+.contact-section {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.contact-form {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #1e1e1e;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #0a0a0a;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00bfff;
+    outline: none;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 300px;
+}
+
+.contact-info h3 {
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #ccc;
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

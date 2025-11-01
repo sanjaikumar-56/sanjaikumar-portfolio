@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sanjai Kumar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 15px 0;
+      text-align: center;
+    }
+    header a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header a:hover {
+      color: #00bcd4;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #2b2b2b;
+      color: white;
+      font-size: 1rem;
+    }
+    input:focus, textarea:focus {
+      outline: 2px solid #00bcd4;
+    }
+    button {
+      background: #00bcd4;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0097a7;
+    }
+    .socials {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #00bcd4;
+      text-decoration: none;
+    }
+    .socials a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" style="color:#00bcd4;">Contact</a>
+  </header>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form action="https://formspree.io/f/manllkqk" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <p>Or connect with me:</p>
+      <a href="mailto:sanjaikumar@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/sanjaikumar">LinkedIn</a> |
+      <a href="https://github.com/sanjaikumar">GitHub</a>
+    </div>
+  </div>
+
+</body>
+</html>
